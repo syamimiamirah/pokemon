@@ -195,7 +195,7 @@ onMounted(async () => {
                 <div class="row mb-4">
                   <div class="col-md-6">
                     <h5 class="text-primary">Basic Info</h5>
-                    <p><strong>Types:</strong> 
+                    <p><strong>Types: </strong> 
                       <span v-for="(type, index) in pokemon.types" :key="type.type.name">
                         <span class="badge bg-secondary me-1">{{ type.type.name }}</span>
                       </span>
@@ -245,7 +245,7 @@ onMounted(async () => {
 <style scoped>
 .pokemon-detail {
   width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   padding: 2rem 1rem;
   box-sizing: border-box;
@@ -259,7 +259,7 @@ onMounted(async () => {
   width: 100%;
   max-width: 1600px;
   margin: 0 auto;
-  height: 100vh;
+  height: 100%;      /* fill parent (pokemon-detail) */
   overflow-y: auto;
   padding-top: 1rem;
 }
