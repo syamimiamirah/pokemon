@@ -8,7 +8,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory("/pokemon/"),
+  history: createWebHistory(process.env.NODE_ENV === 'production' ? '/pokemon/' : '/'),
   routes,
 })
 
