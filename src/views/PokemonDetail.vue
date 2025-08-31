@@ -99,7 +99,7 @@ onMounted(async () => {
 <template>
   <div class="pokemon-detail">
     <div class="detail-wrapper">
-      <RouterLink to="/" class="btn btn-secondary mb-4">Back to Pokédex</RouterLink>
+      <RouterLink to="/pokemon" class="btn btn-secondary mb-4">Back to Pokédex</RouterLink>
 
       <div v-if="loading" class="alert alert-info">Loading details...</div>
       <div v-if="error" class="alert alert-danger">{{ error }}</div>
