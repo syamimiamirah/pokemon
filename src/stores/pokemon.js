@@ -11,7 +11,7 @@ export const usePokemonStore = defineStore("pokemon", {
       this.loading = true
       this.error = null
       try {
-        const res = await fetch("https://pokeapi.co/api/v2/pokemon?limit=50")
+        const res = await fetch("https://pokeapi.co/api/v2/pokemon?limit=100")
         const data = await res.json()
 
         // fetch details for each Pokémon
