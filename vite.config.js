@@ -3,5 +3,5 @@ import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
   plugins: [vue()],
-  base: '/pokemon/'   // ⚠️ must match your repo name
+  base: '/'   // ⚠️ must match your repo name
 })
